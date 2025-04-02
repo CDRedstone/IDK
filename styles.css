@@ -140,11 +140,12 @@ article h3 {
 
 .js-flickity {
 	margin-left: 0;
+	height: 300px;
 }
 
 .gallery-cell {
 	width: 66%;
-	height: 200px;
+	height: 300px;
 	margin-right: 10px;
 	background: #ede4d3;
 }
@@ -188,4 +189,10 @@ article h3 {
 	text-decoration: none;
 	color: #FFFFFF;
 	margin-bottom: 10px;
+}
+
+
+.blogitem {
+	border: 1px solid gray;
+	border-radius: 20px;
 }
