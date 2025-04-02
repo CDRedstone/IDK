@@ -193,6 +193,12 @@ article h3 {
 
 
 .blogitem {
-	border: 1px solid gray;
+	border: 3px solid gray;
 	border-radius: 20px;
+	margin: 20px;
+}
+
+.blogitemname {
+	text-align: left;
+	padding: 20px;
 }
