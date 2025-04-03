@@ -6,20 +6,6 @@
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="flickity.css">
 	<script src="flickity.pkgd.min.js"></script>
-	<script>
-		var name = ""
-		var desc = ""
-		//<div class="blogitem">
-		//		<h3 class="blogitemname"></h3>
-		//		<p class="blogitemdescription"></p>
-		//	</div>
-		fetch('https://pastebin.com/raw/yourPastebinID')
-		.then (response => response.json())
-		.then (data => {
-			
-			
-		})
-	</script>
 </head>
 
 <body>
@@ -55,23 +41,26 @@
 	
 	<!-- EDIT THE ARTICLE BELOW -->
 	<article>
-		<h2>IDK BLOG</h2>
-		<h3></h3>
+		<h2>Special Promotions&nbsp;</h2>
+		<h3>Top New Sales!</h3>
 		<div class="fadeoverlay"></div>
 		<div class="HomeContainer">
 			<!-- BELOW IS THE CAROUSEL: CHANGE THE background-image PROPERTY TO LINK THE IMAGE FILES YOU WANT TO DISPLAY-->
 			<!-- FEEL FREE TO CHANGE THE AMOUNT OF GALLERY CELLS-->
 			<!-- IF THE CAROUSEL GLITCHES GO TO View AND SELECT Refresh Live View-->
-			<div class="blogitem">
-				<h3 class="blogitemname">Site Launch</h3>
-				<p class="blogitemdescription">Check out all our incredible and life-changing products on the interwebs</p>
+			<div class="gallery js-flickity" data-flickity='{"wrapAround": true, "contain": true, "autoPlay": true}'>
+				<div class="gallery-cell" style="background-image: url('img/EXAMPLE_IMAGE.jpeg')"></div>
+				<div class="gallery-cell" style="background-image: url('img/EXAMPLE_IMAGE.jpeg')"></div>
+				<div class="gallery-cell" style="background-image: url('img/IDK family.png')"></div>
+				<div class="gallery-cell" style="background-image: url('img/EXAMPLE_IMAGE.jpeg')"></div>
+				<div class="gallery-cell" style="background-image: url('img/EXAMPLE_IMAGE.jpeg')"></div>
 			</div>
 			
 		</div>
 	</article>
 	
 	<footer>
-		<div class="footerbar"></div>
+	  <div class="footerbar"></div>
 		<div class="footermoreinfo">
 			<div class="footertable">
 				<div class="group">
