@@ -202,3 +202,10 @@ article h3 {
 	text-align: left;
 	padding: 20px;
 }
+
+.blogitemdescription {
+	text-align: left;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
