@@ -13,12 +13,20 @@
 		//		<h3 class="blogitemname"></h3>
 		//		<p class="blogitemdescription"></p>
 		//	</div>
-		fetch('https://pastebin.com/raw/yourPastebinID')
-		.then (response => response.json())
-		.then (data => {
+		try {
+			const response = await fetch('https://pastebin.com/raw/yourPastebinID');
+			const pastedata = await response.json();
 			
-			
-		})
+			if response.ok {
+				pastedata.forEach((blog) => {
+					createBlogPreview(blog.name, blog.desc);
+				});
+			} else {
+				console.error('Failed to fetch paste data');
+			}
+		} catch (error) {
+			console.error('Error fetching paste:', error);
+		}
 	</script>
 </head>
 
