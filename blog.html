@@ -6,43 +6,6 @@
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="flickity.css">
 	<script src="flickity.pkgd.min.js"></script>
-	<script>
-		function createBlogItem(blog) {
-			const blogItemDiv = document.createElement("div");
-  			blogItemDiv.classList.add("blogitem");
-
-  			const blogItemName = document.createElement("h3");
-  			blogItemName.classList.add("blogitemname");
-  			blogItemName.textContent = blog.name;
-
-			const blogItemDescription = document.createElement("p");
-  			blogItemDescription.classList.add("blogitemdescription");
-  			blogItemDescription.textContent = blog.description;
-
-  			blogItemDiv.appendChild(blogItemName);
-  			blogItemDiv.appendChild(blogItemDescription);
-			return blogItemDiv;
-		}
-		
-		const blogContainer = document.getElementById("HomeContainer");
-		
-		fetch('https://pastebin.com/raw/t44Z8kt9')
-  			.then(response => {
-				if (!response.ok) {
-				throw new Error('Network response was not ok');
-    		}
-    		return response.json(); // Parse as JSON
-  		})
-  		.then(data => {
-    		data.forEach(blog => {
-      const blogElement = createBlogItem(blog);
-      blogContainer.appendChild(blogElement);
-    });
-  })
-  .catch(error => {
-    console.error('Error fetching data:', error);
-  });
-	</script>
 </head>
 
 <body>
@@ -82,14 +45,26 @@
 		<h3></h3>
 		<div class="fadeoverlay"></div>
 		<div class="HomeContainer">
-			<!-- BELOW IS THE CAROUSEL: CHANGE THE background-image PROPERTY TO LINK THE IMAGE FILES YOU WANT TO DISPLAY-->
-			<!-- FEEL FREE TO CHANGE THE AMOUNT OF GALLERY CELLS-->
-			<!-- IF THE CAROUSEL GLITCHES GO TO View AND SELECT Refresh Live View-->
 			<div class="blogitem">
 				<h3 class="blogitemname">Site Launch</h3>
 				<p class="blogitemdescription">Check out all our incredible and life-changing products on the interwebs</p>
 			</div>
-			
+			<div class="blogitem">
+				<h3 class="blogitemname">15&percnt; Off Offers</h3>
+				<p class="blogitemdescription">Offers end April 9 12:00PM GMT</p>
+			</div>
+			<div class="blogitem">
+				<h3 class="blogitemname">Site Launch</h3>
+				<p class="blogitemdescription">Check out all our incredible and life-changing products on the interwebs</p>
+			</div>
+			<div class="blogitem">
+				<h3 class="blogitemname">Site Launch</h3>
+				<p class="blogitemdescription">Check out all our incredible and life-changing products on the interwebs</p>
+			</div>
+			<div class="blogitem">
+				<h3 class="blogitemname">Site Launch</h3>
+				<p class="blogitemdescription">Check out all our incredible and life-changing products on the interwebs</p>
+			</div>
 		</div>
 	</article>
 	
