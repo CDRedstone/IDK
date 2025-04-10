@@ -212,3 +212,14 @@ article h3 {
 	margin-bottom: 20px;
 	font-size: 20px;
 }
+
+.imgs {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	
+}
+
+.imgs div {
+	display: block;
+}
