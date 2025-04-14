@@ -197,13 +197,13 @@ article h3 {
 }
 
 
-.blogitem {
+.blogitem, .newsitem {
 	border: 3px solid gray;
 	border-radius: 20px;
 	margin: 20px;
 }
 
-.blogitemname {
+.blogitemname, .newsitemname {
 	text-align: left;
 	padding: 20px;
 	text-overflow: ellipsis;
@@ -211,7 +211,7 @@ article h3 {
 	overflow: hidden;
 }
 
-.blogitemdescription {
+.blogitemdescription, .newsitemdescription {
 	text-align: left;
 	margin-left: 20px;
 	margin-bottom: 20px;
@@ -219,6 +219,21 @@ article h3 {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+}
+
+.newsitemname {
+	width: 70%;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.newsitemdate {
+	width: 20%;
+	margin-top: 20px;
+}
+
+.blogitemheader {
+	display: flex;
 }
 
 .imgs {
