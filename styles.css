@@ -217,9 +217,12 @@ article h3 {
 	display: flex;
 	justify-content: space-around;
 	flex-flow: row wrap;
-	
 }
 
 .imgs div {
 	display: block;
+}
+div.product {
+	border: 2px solid #4d6a6d;
+	padding: 5px;
 }
