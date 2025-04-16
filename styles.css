@@ -225,15 +225,20 @@ article h3 {
 	width: 70%;
 	padding-right: 0;
 	margin-right: 0;
+	font-size: 35px;
 }
 
 .newsitemdate {
 	width: 20%;
+	text-align: right;
 	margin-top: 20px;
+	margin-right: 20px;
+	color: #a6a6a6;
 }
 
-.blogitemheader {
+.newsitemheader {
 	display: flex;
+	justify-content: space-between;
 }
 
 .imgs {
