@@ -295,13 +295,18 @@ form button:hover {
 .ripple-button {
 	position: relative;
 	overflow: hidden;
-	background-color: #4d6a6d; /* Adjust for your theme */
+	background-color: #4d6a6d;
 	color: white;
 	border: none;
 	padding: 12px 20px;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 30px;
 	border-radius: 4px;
+
+	resize: none;
+	user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
 }
   
 .ripple-button .ripple {
