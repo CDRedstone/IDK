@@ -63,9 +63,9 @@
 						<option value="payments">Checkout / Pricing Issue</option>
 						<option value="show">I want a rematch with Phelony</option>
 					</select>
-					<label id="extraText">(We do too)</label>
+					<label id="extraText" style="margin-bottom:20px; font-style: italic; color: gray; display: none;">(We do too)</label>
 					<textarea placeholder="More info..." style="height: 200px;"></textarea>
-					<button>Submit</button>
+					<button id="support-form-submit" class="ripple-button">Submit</button>
 				</form>
 			</div>
 		</div>
@@ -117,6 +117,7 @@
 	<script>
 		const select = document.getElementById('options');
 		const extraText = document.getElementById('extraText');
+		const button = document.getElementById("support-form-submit")
 	
 		select.addEventListener('change', () => {
 		  if (select.value === 'show') {
@@ -125,6 +126,37 @@
 			extraText.style.display = 'none';
 		  }
 		});
+
+		button.addEventListener("click", function(e) {
+    		e.preventDefault();
+
+    		// Create the ripple
+    		const ripple = document.createElement("span");
+    		ripple.classList.add("ripple");
+
+    		// Get the click coordinates
+    		const rect = button.getBoundingClientRect();
+    		const x = e.clientX - rect.left;
+    		const y = e.clientY - rect.top;
+
+    		ripple.style.left = `${x}px`;
+    		ripple.style.top = `${y}px`;
+    		ripple.style.width = ripple.style.height = `${button.offsetWidth}px`;
+
+    		// Remove old ripple if any
+    		const oldRipple = button.querySelector(".ripple");
+    		if (oldRipple) oldRipple.remove();
+
+    		// Append ripple to button
+    		button.appendChild(ripple);
+
+    		// Delay redirect so ripple can show
+    		setTimeout(() => {
+        		window.location.href = "img/supportform-submit.webp";
+   			}, 400); // Match this with the animation duration
+});
+
+
 	  </script>
 </body>
 </html>
