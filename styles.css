@@ -47,6 +47,48 @@ html, body {
 	height: 80px;
 }
 
+.Imagebob{
+	margin-left: 430px;
+	width:120px;
+}
+.Imagebrick{
+	margin-left: 430px;
+	width:120px;
+}
+.Imagecleetus{
+	margin-left:430px;
+	width:120px;
+}
+.Imagedanger{
+	margin-left:430px;
+	width:130px;
+	height:130px;
+}
+.Imagedanger{
+	margin-left:430px;
+	width:120px;
+}
+.Imagephelony{
+	margin-left:430px;
+	width:120px;
+}
+.Imagepluto{
+	margin-left:430px;
+	width:120px;
+}
+
+.Imagetemu{
+	margin-left:430px;
+	width:120px;
+}
+.Imagedollar{
+	margin-left:390px;
+	width:220px;
+}
+.Imageshein{
+	margin-left:430px;
+	width:120px;
+}
 .CartContainer {
 	background-color: #68888b;
 	width:100%;
@@ -138,8 +180,10 @@ article h3 {
 	margin-bottom: 10px;;
 }
 
+
 article p {
 	margin: 0 20px;
+	text-align:center;
 }
 
 .js-flickity {
