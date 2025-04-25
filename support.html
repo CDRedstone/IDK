@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>IDK Support</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="flickity.css">
+	<link rel="icon" href="img/Icon.png">
+	<script src="flickity.pkgd.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="LogoContainer">
+			<a href="home.html">
+				<img src="img/logo.webp" class="ImageLogo">
+			</a>
+			<a  href="home.html" class="LogoBottomText">Items Decently Kreated</a>
+			<h1 class="Logo">IDK</h1>
+		</div>
+		<nav class="CartContainer">
+			<a class="NavLink" href="home.html">Home</a>
+			<a class="NavLink" href="store.html">Store</a>
+			<a class="NavLink" href="pricing.html">Pricing</a>
+			<a class="NavLink" href="company.html">Company</a>
+			<p class="CartItemsDisplay">0</p>
+			<img src="img/shopping_cart.svg" class="img-shopping-cart">
+		</nav>
+	</header>
+	
+	<aside>
+		<div class="NavContainer">
+			<a class="NavLink" href="contact.html">Contact</a>
+			<a class="NavLink" href="team.html">Team</a>
+			<a class="NavLink" href="testimonials.html">Testimonials</a>
+			<a class="NavLink" href="faqs.html">FAQs</a>
+			<a class="NavLink" href="blog.html">Blog</a>
+			<a class="NavLink" href="news.html">News</a>
+		</div>
+	</aside>
+	
+	
+	<!-- EDIT THE ARTICLE BELOW -->
+	<article>
+		<h2>IDK Support</h2>
+		<h3 style="font-style: italic;">Please be patient</h3>
+		<div class="fadeoverlay"></div>
+		<div class="HomeContainer">
+			<div class="FormContainer">
+				<h3>Support Form</h3>
+				<form>
+					<label for="fname">First Name <span class="formoptional">&#40;optional&#41;</span></label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+					<label for="email">Email</label>
+					<input type="email" id="fname" name="firstname" placeholder="Your email..." required>
+					<label for="typeofinquiry">Type of Inquiry</label>
+					<select id="options">
+						<option value="selectanoption">--Please select an option--</option>
+						<option value="payments">Billing &amp; Payments</option>
+						<option value="payments">Website Issues</option>
+						<option value="payments">Problem with Shipping</option>
+						<option value="show">I Want to Fight Phelony</option>
+						<option value="payments">Checkout / Pricing Issue</option>
+						<option value="show">I want a rematch with Phelony</option>
+					</select>
+					<label id="extraText" style="margin-bottom:20px; font-style: italic; color: gray; display: none;">(We do too)</label>
+					<textarea placeholder="More info..." style="height: 200px;"></textarea>
+					<button id="support-form-submit" class="ripple-button">Submit</button>
+				</form>
+			</div>
+		</div>
+	</article>
+	
+	<footer>
+		<div class="footerbar"></div>
+		<div class="footermoreinfo">
+			<div class="footertable">
+				<div class="group">
+					<a href="home.html">Home</a>
+					<a href="store.html">Store</a>
+					<a href="pricing.html">Pricing</a>
+					<a href="company.html">Company</a>
+				</div>
+				<div class="group">
+					<a href="contact.html">Contact</a>
+					<a href="team.html">Team</a>
+					<a href="testimonials.html">Testimonials</a>
+					<a href="faqs.html">FAQs</a>
+				</div>
+				<div class="group">
+					<a href="blog.html">Blog</a>
+					<a href="news.html">News</a>
+					<a href="outreach.html">Outreach</a>
+					<a href="partnerships.html">Partnerships</a>
+				</div>
+				<div class="group">
+					<a href="careers.html">Working at IDK</a>
+					<a href="aboutus.html">About IDK</a>
+					<a href="support.html">Support</a>
+					<a href="privacypolicy.html">Privacy Policy</a>
+				</div>
+				<div class="group">
+					<a href="promotions.html">Promotions</a>
+					<a href="events.html">Events</a>
+					<a href="gallery.html">Gallery</a>
+					<a href="terms.html">Terms &amp; Conditions</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+	<script>
+		const select = document.getElementById('options');
+		const extraText = document.getElementById('extraText');
+		const button = document.getElementById("support-form-submit")
+	
+		select.addEventListener('change', () => {
+		  if (select.value === 'show') {
+			extraText.style.display = 'block';
+		  } else {
+			extraText.style.display = 'none';
+		  }
+		});
+
+		button.addEventListener("click", function(e) {
+    		e.preventDefault();
+
+    		// Create the ripple
+    		const ripple = document.createElement("span");
+    		ripple.classList.add("ripple");
+
+    		// Get the click coordinates
+    		const rect = button.getBoundingClientRect();
+    		const x = e.clientX - rect.left;
+    		const y = e.clientY - rect.top;
+
+    		ripple.style.left = `${x}px`;
+    		ripple.style.top = `${y}px`;
+    		ripple.style.width = ripple.style.height = `${button.offsetWidth}px`;
+
+    		// Remove old ripple if any
+    		const oldRipple = button.querySelector(".ripple");
+    		if (oldRipple) oldRipple.remove();
+
+    		// Append ripple to button
+    		button.appendChild(ripple);
+
+    		// Delay redirect so ripple can show
+    		setTimeout(() => {
+        		window.location.href = "img/supportform-submit.webp";
+   			}, 400); // Match this with the animation duration
+});
+
+
+	  </script>
+</body>
+</html>
