@@ -254,29 +254,10 @@ div.product {
 	border: 5px solid #4d6a6d;
 	padding: 5px;
 }
-
-.FormContainer {
-	width: 50vw;
-	margin: 0 auto;
-}
-
-
-input[type=text], input[type=email], select, textarea {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 8px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical
-}
-
-form button {
-	width: 40%;
-	height: 2em;
-	font-size: 30px;
+div.people {
+	border: 5px solid #4d6a6d;
 	padding: 5px;
+}
 	border: 1px solid #ccc;
 	border-radius: 8px;
 	box-sizing: border-box;
