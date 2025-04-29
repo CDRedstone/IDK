@@ -1,21 +1,26 @@
 function createBanner(message) {
-    const banner = document.createElement("div");
-    banner.id = "top-banner";
-    banner.innerHTML = `
-      ${message}
-      <span class="close-btn" onclick="this.parentElement.remove()">✕</span>
-    `;
-    document.body.appendChild(banner);
+  const banner = document.createElement("div");
+  banner.id = "top-banner";
+  banner.innerHTML = `
+    ${message}
+    <span class="close-btn" id="closeBannerBtn">✕</span>
+  `;
+  document.body.appendChild(banner);
+
+  document.getElementById('closeBannerBtn').addEventListener('click', function () {
+    banner.remove();
+    localStorage.setItem('hideBanner', 'true');
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Check localStorage before showing the banner
+  if (!localStorage.getItem('hideBanner')) {
+    createBanner("This site uses cookies to track your every move!☺️ ✅✅👍👍");
   }
 
-  // Example usage
-
-
-
-  document.addEventListener("DOMContentLoaded", function () {
-    createBanner("This site uses cookies to track your every move!☺️ ✅✅👍👍");
-
-
+  // Check localStorage before showing the popup
+  if (!localStorage.getItem('hidePopup')) {
     const popup = document.createElement('div');
     popup.id = 'infopopup';
     popup.innerHTML = `
@@ -29,15 +34,16 @@ function createBanner(message) {
 
     document.getElementById('closeBtn').addEventListener('click', function () {
       popup.remove();
+      localStorage.setItem('hidePopup', 'true');
       alert("Wait, are you SURE?? We'll still call you.");
     });
 
     document.getElementById('yesBtn').addEventListener('click', function () {
-        popup.remove();
-        alert("Thank you for your data!");
-      });
+      popup.remove();
+      localStorage.setItem('hidePopup', 'true');
+      alert("Thank you for your data!");
+    });
+  }
 
-
-    //Cartsssssss
-    
-  });
+  //Cartsssssss
+});
