@@ -525,3 +525,24 @@ form button:hover {
 	font-size: 16px;
 	border-radius: 10px;
   }
+
+  .supportsentflex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 30px 0;
+  }
+
+  .supportsentbutton {
+	display: inline-block;
+	background-color: #68888b;
+	height: 40px;
+	border-radius: 10px;
+	padding: 0 30px;
+
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	font-weight: bolder;
+	font-size: 1.5em;
+  }
