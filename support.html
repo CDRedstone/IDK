@@ -120,10 +120,17 @@
 		const button = document.getElementById("support-form-submit")
 	
 		select.addEventListener('change', () => {
-		  if (select.value === 'show') {
-			extraText.style.display = 'block';
-		  } else {
-			extraText.style.display = 'none';
+			if (select.value === 'show') {
+				extraText.style.display = 'block';
+			} else {
+				extraText.style.display = 'none';
+			}
+			if (select.value === 'selectanoption') {
+				select.style.backgroundColor = 'white';
+		  	} else {
+			if (select.value !== 'selectanoption') {
+				select.style.backgroundColor = 'lightgray';
+			}
 		  }
 		});
 
@@ -154,9 +161,10 @@
     		setTimeout(() => {
         		window.location.href = "img/supportform-submit.webp";
    			}, 400); // Match this with the animation duration
-});
+		});
 
 
 	  </script>
+	  <script src="js.js"></script>
 </body>
 </html>
