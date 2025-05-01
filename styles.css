@@ -533,15 +533,30 @@ form button:hover {
   }
 
   .supportsentbutton {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	background-color: #68888b;
-	height: 40px;
+	height: 50px;
 	border-radius: 10px;
 	padding: 0 30px;
 
-	line-height: 40px;
 	text-align: center;
 	color: white;
 	font-weight: bolder;
 	font-size: 1.5em;
+	text-decoration: none;
+	gap: 10px;
   }
+
+  .supportsentbutton img {
+	height: 20px;
+	margin: 0;
+}
+
+.homerowflex {
+	display: inline-flex;
+	flex-direction:row;
+	justify-content: space-between;
+	align-items: center;
+}
