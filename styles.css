@@ -268,6 +268,16 @@ article p {
 	overflow: hidden;
 }
 
+.blogitem img {
+	float: left;
+	height: 130px;
+	width: 130px;
+	margin: 5px;
+	border-radius: 20px;
+	display: block;
+	object-fit: cover;
+}
+
 .newsitemname {
 	width: 70%;
 	padding-right: 0;
@@ -528,8 +538,9 @@ form button:hover {
   .supportsentflex {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	margin: 30px 0;
+	justify-content: space-between;
+	margin: 30px auto;
+	width: 60%;
   }
 
   .supportsentbutton {
@@ -559,4 +570,9 @@ form button:hover {
 	flex-direction:row;
 	justify-content: space-between;
 	align-items: center;
+	width:100%;
+}
+
+.homerowflex h3 {
+	font-size: 30px;
 }
