@@ -586,3 +586,32 @@ form button:hover {
 	width: 400px;
 	height: 214px;
 }
+
+.shopnowflex {
+	display: flex;
+	margin-top: 100px;
+	justify-content: space-around;
+}
+
+.shopnowbutton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #68888b;
+	height: 100px;
+	border-radius: 20px;
+	padding: 0 30px;
+
+	text-align: center;
+	color: white;
+	font-weight: bolder;
+	font-size: 3em;
+	text-decoration: none;
+	gap: 40px;
+	line-height: 60px;
+	vertical-align: center;
+}
+
+.shopnowbutton img {
+	height: 40px;
+}
