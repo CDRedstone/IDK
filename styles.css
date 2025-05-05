@@ -576,3 +576,13 @@ form button:hover {
 .homerowflex h3 {
 	font-size: 30px;
 }
+
+#eventscarousel {
+	margin-left: 50%;
+	height: 214px;
+}
+
+#eventscarousel .gallery-cell {
+	width: 400px;
+	height: 214px;
+}
