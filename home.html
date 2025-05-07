@@ -43,20 +43,34 @@
 	<!-- EDIT THE ARTICLE BELOW -->
 	<article>
 		<h2>TRUSTED BY OVER 8.3 TRILLION PEOPLE</h2>
-		<h3>Our bestsellers:</h3>
 		<div class="fadeoverlay"></div>
 		<div class="HomeContainer">
 			<!-- BELOW IS THE CAROUSEL: CHANGE THE background-image PROPERTY TO LINK THE IMAGE FILES YOU WANT TO DISPLAY-->
 			<!-- FEEL FREE TO CHANGE THE AMOUNT OF GALLERY CELLS-->
 			<!-- IF THE CAROUSEL GLITCHES GO TO View AND SELECT Refresh Live View-->
-			<div class="gallery js-flickity" data-flickity='{"wrapAround": true, "contain": true, "autoPlay": true}'>
-				<div class="gallery-cell" style="background-image: url('img/dehydrated\ water.jpeg')"></div>
-				<div class="gallery-cell" style="background-image: url('img/off\ brand\ pop.jpeg')"></div>
-				<div class="gallery-cell" style="background-image: url('img/pre-cracked\ egg.webp')"></div>
-				<div class="gallery-cell" style="background-image: url('img/circular\ bike.jpeg')"></div>
-				<div class="gallery-cell" style="background-image: url('img/ghosts.jpeg')"></div>
+			<div class="homerowflex" style="margin-top: 30px;">
+				<h3 style="margin: 0; margin-left: 20px;">Bestsellers</h3>
+				<a href="store.html" style="margin-right: 20px; line-height: 20px; display: flex; color: black; font-size: 18px;">See more<img src="img/chevronright.svg" style="margin-left: 10px;"></a>
 			</div>
-			
+			<div class="gallery js-flickity" style="margin-bottom: 50px;" data-flickity='{"wrapAround": true, "contain": true, "autoPlay": true, "selectedAttraction": 0.005, "friction": 0.15, "pauseAutoPlayOnHover": false}'>
+				<div class="gallery-cell" style="background-image: url('img/dehydrated\ water.jpeg'); background-color: white; border-radius: 10px;"></div>
+				<div class="gallery-cell" style="background-image: url('img/off\ brand\ pop.jpeg'); background-color: white; border-radius: 10px;"></div>
+				<div class="gallery-cell" style="background-image: url('img/pre-cracked\ egg.webp'); background-color: white; border-radius: 10px;"></div>
+				<div class="gallery-cell" style="background-image: url('img/circular\ bike.jpeg'); background-color: white; border-radius: 10px;"></div>
+				<div class="gallery-cell" style="background-image: url('img/ghosts.jpeg'); background-color: white; border-radius: 10px;"></div>
+			</div>
+			<div class="homerowflex">
+				<h3 style="margin: 0; margin-left: 20px;">Promotions</h3>
+				<a href="promotions.html" style="margin-right: 20px; line-height: 20px; display: flex; color: black; font-size: 18px;">See more<img src="img/chevronright.svg" style="margin-left: 10px;"></a>
+			</div>
+			<div class="gallery js-flickity" data-flickity='{"wrapAround": true, "contain": true, "autoPlay": true, "selectedAttraction": 0.005, "friction": 0.15, "pauseAutoPlayOnHover": false}'>
+				<div class="gallery-cell" style="background-image: url('img/IDK\ bonfire.png'); background-color: white; border-radius: 10px;"></div>
+				<div class="gallery-cell" style="background-image: url('img/IDK\ FREE.png'); background-color: white; border-radius: 10px;"></div>
+				<div class="gallery-cell" style="background-image: url('img/IDK\ SALE.png'); background-color: white; border-radius: 10px;"></div>
+			</div>
+			<div class="shopnowflex">
+				<a href="store.html" class="shopnowbutton">SHOP NOW<img src="img/chevronrightwhite.svg"></a>
+			</div>
 		</div>
 	</article>
 	
@@ -97,5 +111,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js.js"></script>
 </body>
 </html>
