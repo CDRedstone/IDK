@@ -260,7 +260,7 @@ article p {
 }
 .blogitemdescription, .newsitemdescription {
 	text-align: left;
-	margin-left: 20px;
+	margin-left: 160px;
 	margin-bottom: 20px;
 	font-size: 20px;
 	text-overflow: ellipsis;
@@ -268,24 +268,24 @@ article p {
 	overflow: hidden;
 }
 
-.blogitem img {
+.blogitem img, .newsitem img {
 	float: left;
 	height: 130px;
 	width: 130px;
 	margin: 5px;
-	border-radius: 20px;
+	border-radius: 15px;
 	display: block;
 	object-fit: cover;
 }
 
-.newsitemname {
+.newsitemname, .blogitemname {
 	width: 70%;
 	padding-right: 0;
 	margin-right: 0;
 	font-size: 35px;
 }
 
-.newsitemdate {
+.newsitemdate, .blogitemdate {
 	width: 20%;
 	text-align: right;
 	margin-top: 20px;
@@ -293,7 +293,7 @@ article p {
 	color: #a6a6a6;
 }
 
-.newsitemheader {
+.newsitemheader, .blogitemheader {
 	display: flex;
 	justify-content: space-between;
 }
@@ -307,14 +307,22 @@ article p {
 .imgs div {
 	display: block;
 }
+span.name p1, p2, p3{
+	text-align: center;
+	font-weight: bold;
+	vertical-align: bottom;
+    display: block;
+	font-size: 24px;
+}
 div.product {
 	border: 5px solid #4d6a6d;
 	padding: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
 }
-div.people {
+div.testimonials {
 	border: 5px solid #4d6a6d;
 	padding: 5px;
-	border: 1px solid #ccc;
 	border-radius: 8px;
 	box-sizing: border-box;
 	margin-top: 6px;
@@ -322,6 +330,7 @@ div.people {
 	resize: vertical;
 	background-color: #4d6a6d;
 	color: #eae0cc;
+	text-align: center;
 }
 
 .FormContainer {

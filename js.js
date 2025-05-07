@@ -16,7 +16,7 @@ function createBanner(message) {
 document.addEventListener("DOMContentLoaded", function () {
   // Check localStorage before showing the banner
   if (!localStorage.getItem('hideBanner')) {
-    createBanner("This site uses cookies to track your every move!☺️ ✅✅👍👍");
+    createBanner('<span style="font-weight: bolder;">80&percnt; OFF OFFERS!</span> Only valid if you beat Phelony in a fight. <a href="home.html" style="color: #34c6eb; text-decoration: underline;">See More</a>');
   }
 
   // Check localStorage before showing the popup
