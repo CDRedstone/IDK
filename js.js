@@ -19,31 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
     createBanner('<span style="font-weight: bolder;">80&percnt; OFF OFFERS!</span> Only valid if you beat Phelony in a fight. <a href="home.html" style="color: #34c6eb; text-decoration: underline;">See More</a>');
   }
 
-  // Check localStorage before showing the popup
-  if (!localStorage.getItem('hidePopup')) {
-    const popup = document.createElement('div');
-    popup.id = 'infopopup';
-    popup.innerHTML = `
-      <strong>🔥 50% OFF 🔥</strong><br>
-      Just give us your SSN and full legal name!<br>
-      <button id="closeBtn">NO THANKS (but yes)</button>
-      <button id="yesBtn">Sell my soul too</button>
-    `;
-
-    document.body.appendChild(popup);
-
-    document.getElementById('closeBtn').addEventListener('click', function () {
-      popup.remove();
-      localStorage.setItem('hidePopup', 'true');
-      alert("Wait, are you SURE?? We'll still call you.");
-    });
-
-    document.getElementById('yesBtn').addEventListener('click', function () {
-      popup.remove();
-      localStorage.setItem('hidePopup', 'true');
-      alert("Thank you for your data!");
-    });
-  }
-
   //Cartsssssss
+  
 });
