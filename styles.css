@@ -352,6 +352,23 @@ div.worker {
 }
 
 }
+div.store{
+	border: 5px solid #4d6a6d;
+	padding: 5px;
+}
+div.workers{
+	border:5px solid #4d6a6d;
+	padding:5px;
+	bottom-border:2px;
+}
+
+div.worker {
+	border:5px solid #eae0cc;
+	padding:5px;
+	top-margin:2px;
+}
+
+}
 div.people {
 	border: 5px solid #4d6a6d;
 	padding: 5px;
