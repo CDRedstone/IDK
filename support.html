@@ -62,10 +62,12 @@
 						<option value="show">I Want to Fight Phelony</option>
 						<option value="payments">Checkout / Pricing Issue</option>
 						<option value="show">I want a rematch with Phelony</option>
+						<option value="qc">I had a quality control issue on the product I purchased</option>
 					</select>
 					<label id="extraText" style="margin-bottom:20px; font-style: italic; color: gray; display: none;">(We do too)</label>
 					<textarea placeholder="More info..." style="height: 200px;"></textarea>
 					<button id="support-form-submit" class="ripple-button">Submit</button>
+					<p style="display: flex; vertical-align: center;"><img src="img/warning.svg" style="background-color: yellow; padding: 5px; height: 30px; border-radius: 10px;">Please use the stone tablet and chisel included in your package and send it back to us.</p>
 				</form>
 			</div>
 		</div>
@@ -128,10 +130,15 @@
 			if (select.value === 'selectanoption') {
 				select.style.backgroundColor = 'white';
 		  	} else {
-			if (select.value !== 'selectanoption') {
-				select.style.backgroundColor = 'lightgray';
+				if (select.value !== 'selectanoption') {
+					select.style.backgroundColor = 'lightgray';
+				}
 			}
-		  }
+			if (select.value === 'qc') {
+				button.style.display = 'none';
+			} else {
+				button.style.display = 'block';
+			}
 		});
 
 		button.addEventListener("click", function(e) {
