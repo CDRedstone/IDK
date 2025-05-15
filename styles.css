@@ -59,11 +59,7 @@ html, body {
 	margin-left:430px;
 	width:120px;
 }
-.Imagedanger{
-	margin-left:430px;
-	width:130px;
-	height:130px;
-}
+
 .Imagedanger{
 	margin-left:430px;
 	width:120px;
@@ -326,7 +322,60 @@ div.product {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	text-align: center;
 }
-div.testimonials {
+div.store{
+	border: 5px solid #4d6a6d;
+	padding: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+}
+div.worker{
+	border: 5px solid #4d6a6d;
+	padding: 5px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+}
+div.workers{
+	border: 5px solid #eae0cc;
+	padding: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+}
+
+div.store{
+	border: 5px solid #4d6a6d;
+	padding: 5px;
+}
+div.workers{
+	border:5px solid #4d6a6d;
+	padding:5px;
+	bottom-border:2px;
+}
+
+div.worker {
+	border:5px solid #eae0cc;
+	padding:5px;
+	top-margin:2px;
+}
+
+}
+div.store{
+	border: 5px solid #4d6a6d;
+	padding: 5px;
+}
+div.workers{
+	border:5px solid #4d6a6d;
+	padding:5px;
+	bottom-border:2px;
+}
+
+div.worker {
+	border:5px solid #eae0cc;
+	padding:5px;
+	top-margin:2px;
+}
+
+}
+div.people {
 	border: 5px solid #4d6a6d;
 	padding: 5px;
 	border-radius: 8px;

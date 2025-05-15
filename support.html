@@ -67,7 +67,7 @@
 					<label id="extraText" style="margin-bottom:20px; font-style: italic; color: gray; display: none;">(We do too)</label>
 					<textarea placeholder="More info..." style="height: 200px;"></textarea>
 					<button id="support-form-submit" class="ripple-button">Submit</button>
-					<p style="display: flex; vertical-align: center;"><img src="img/warning.svg" style="background-color: yellow; padding: 5px; height: 30px; border-radius: 10px;">Please use the stone tablet and chisel included in your package and send it back to us.</p>
+					<div id="supporttablet" style="align-items: center; flex-direction: row; gap: 20px; vertical-align: center; justify-content: space-around;"><img src="img/warning.svg" style="background-color: yellow; padding: 5px; height: 30px; border-radius: 10px;"><p style="width: 80%; line-height: 20px; text-wrap: pretty; vertical-align: center; text-align: left;">Please write your complaint with the stone tablet and chisel included in your package and send it back to us. <span style="font-style: italic; color: lightgray;">Free shipping not provided.</span></p>
 				</form>
 			</div>
 		</div>
@@ -119,7 +119,9 @@
 	<script>
 		const select = document.getElementById('options');
 		const extraText = document.getElementById('extraText');
-		const button = document.getElementById("support-form-submit")
+		const button = document.getElementById("support-form-submit");
+		const tabletText = document.getElementById("supporttablet");
+		tabletText.style.display = 'none';
 	
 		select.addEventListener('change', () => {
 			if (select.value === 'show') {
@@ -136,8 +138,10 @@
 			}
 			if (select.value === 'qc') {
 				button.style.display = 'none';
+				tabletText.style.display = 'inline-flex';
 			} else {
 				button.style.display = 'block';
+				tabletText.style.display = 'none';
 			}
 		});
 
