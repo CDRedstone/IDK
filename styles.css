@@ -203,7 +203,13 @@ article p {
 	background-size: contain;
 }
 
+.description{
+	float:right;
+}
 
+.productimg{
+	float:left;
+}
 /* FOOTER */
 .footerbar {
 	background-color: #C9ADA1;
@@ -343,8 +349,6 @@ div.testimonials {
  
 
  
-
- 
 input[type=text], input[type=email], select, textarea {
  
 	width: 100%;
@@ -403,10 +407,9 @@ form button:hover {
  
 }
  
+div.imgs {
+}
 
- 
-
- 
 .ripple-button {
  
 	position: relative;
