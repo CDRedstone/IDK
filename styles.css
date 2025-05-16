@@ -348,16 +348,15 @@ div.store{
 div.workers{
 	border:5px solid #4d6a6d;
 	padding:5px;
-	bottom-border:2px;
+	border-bottom:2px;
 }
 
 div.worker {
 	border:5px solid #eae0cc;
 	padding:5px;
-	top-margin:2px;
+	margin-top:2px;
 }
 
-}
 div.store{
 	border: 5px solid #4d6a6d;
 	padding: 5px;
@@ -365,16 +364,15 @@ div.store{
 div.workers{
 	border:5px solid #4d6a6d;
 	padding:5px;
-	bottom-border:2px;
+	border-bottom:2px;
 }
 
 div.worker {
 	border:5px solid #eae0cc;
 	padding:5px;
-	top-margin:2px;
+	margin-top:2px;
 }
 
-}
 div.people {
 	border: 5px solid #4d6a6d;
 	padding: 5px;
@@ -454,9 +452,6 @@ form button:hover {
  
 	background-color: #68888b;
  
-}
- 
-div.imgs {
 }
 
 .ripple-button {
