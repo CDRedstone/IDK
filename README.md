@@ -2,6 +2,8 @@
 school group project
 
 ## How to Commit
+**// Deprecated //** - This website will no longer recieve updates (as we have turned it in!)
+<br><br>
 To commit changes to this project, make your changes in the selected file and click Commit Changes.
 
 ## File Creation
